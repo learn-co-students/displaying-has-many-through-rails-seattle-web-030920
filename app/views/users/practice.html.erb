@@ -1,0 +1,5 @@
+<%= @user.username %> has commented on the following posts:
+
+<%= @user.posts.each{ |post| %>
+    <%= link_to post.title, post_path(title.id) %><br>
+<% } %>
